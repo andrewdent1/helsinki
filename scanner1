@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Program {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("What is your speed?");
+
+        int speed = Integer.valueOf(scanner.nextLine());
+
+        if (speed > 80) {
+            System.out.println("Here's your speeding ticket!");
+        } else {
+            System.out.println("Drive faster nerd.");
+        }
+
+    }
+}
