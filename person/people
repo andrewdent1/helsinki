@@ -1,0 +1,7 @@
+public class Person {
+  Person andrew = new Person("Andrew", 22);
+  Person brenna = new Person("Brenna", 23);
+
+  andrew.printPerson();
+  brenna.printPerson();
+}
