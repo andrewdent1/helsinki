@@ -1,1 +1,19 @@
+import java.util.ArrayList;
 
+public class Main {
+  public static void main(String[] args) {
+    Book book1 = new Book("Throne of Glass", "Sarah J Mass", 10);
+    Book book2 = new Book("ACOTAR", "Sarah J Mass", 9);
+    Book book3 = new Book("Iron Flame", "Rebecca Yarros", 8);
+
+    Book.addBook(book1);
+    Book.addBook(book2);
+    Book.addBook(book3);
+
+    ArrayList < Book > bookList = Book.get_bookList();
+    System.out.println("List of books: ");
+    for (Book book: bookList) {
+      System.out.println(book.getTitle() + " by " + book.getAuthor() + ", rating: " + book.getRating());
+    }
+  }
+}
