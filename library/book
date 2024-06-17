@@ -1,0 +1,50 @@
+import java.util.ArrayList;
+
+public class Book { 
+    public String title;
+    public String author;
+    public int rating;
+    public static ArrayList < Book > bookList = new ArrayList < Book > ();
+
+    public Book(String title, String author, int rating) {
+        this.title = title;
+        this.author = author;
+        this.rating = rating;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getRating() {
+        return rating;
+    }
+
+    public void setRating(String rating) {
+        this.rating = rating;
+    }
+
+    public static void addBook(Book book) {
+        bookList.add(book);
+    }
+
+    public static void removeBook(Book book) {
+        bookList.remove(book);
+    }
+
+    public static ArrayList < Book > getBookList() {
+        return bookList;
+    }
+}
